@@ -1,78 +1,56 @@
-This Jupyter notebook provides a production-ready, end-to-end pipeline for customer churn prediction with advanced machine learning techniques and comprehensive analysis. It is designed for easy execution: simply upload to Google Colab and run all cells—no additional setup required.
+# Customer Churn Prediction
 
-🚀 Key Features & Improvements
-1. Advanced Optimization with Optuna
 
-Hyperparameter Tuning: 30 trials per model for thorough exploration.
+## 🚀 Key Features & Improvements
 
-Cross-Validation: Stratified 5-fold CV for robust evaluation.
+### Advanced Optimization with Optuna
+- Hyperparameter tuning: 30 trials per model for thorough exploration.
+- Stratified 5-fold cross-validation for robust evaluation.
+- Models optimized: Random Forest, XGBoost, LightGBM, and ANN.
+- Parameter importance analysis included.
 
-Models Optimized: Random Forest, XGBoost, LightGBM, and ANN.
+### Handling Class Imbalance
+- **No SMOTE** used: avoids oversampling pitfalls and information leakage.
+- Class weights provide more realistic and generalizable results.
 
-Insights: Parameter importance analysis for each model.
+### Ensemble Model
+- Weighted voting based on CV performance.
+- Combines strengths of all optimized models for better performance.
 
-2. Handling Class Imbalance
+### Enhanced Cross-Validation
+- Stratified 5-fold CV applied across all models.
+- Cross-validation scores visualized for better interpretability.
 
-No SMOTE Used: Avoids oversampling pitfalls and information leakage.
+### Comprehensive Analysis
+**Data Understanding**
+- EDA with 10+ visualizations.
+- Correlation and trend analysis for feature insights.
 
-Class Weights: Provides more realistic and generalizable results.
+**Feature Engineering**
+- 10+ engineered features including RFM and engagement scores.
+- Domain-specific features for improved churn prediction.
 
-3. Ensemble Model
+**Model Training & Evaluation**
+- Training of 4 base models + 1 ensemble.
+- Performance evaluation with multiple metrics:
+  - Accuracy, F1-score, Precision, Recall, ROC-AUC
+  - Confusion matrices, ROC curves, classification reports
+- Feature importance analysis and visualizations.
 
-Weighted Voting: Combines predictions from all optimized models based on CV performance.
+---
 
-Performance Boost: Leverages strengths of individual models for higher accuracy.
+## ⚡ How to Use
+1. Open Google Colab: [https://colab.research.google.com](https://colab.research.google.com)
+2. Upload the notebook file.
+3. Run all cells sequentially.
+4. All dependencies and datasets are handled inside the notebook—no additional configuration needed.
 
-4. Enhanced Cross-Validation
+---
 
-Stratified 5-fold CV applied across all models.
+## 🛠 Technology & Libraries
+- Python 3.x
+- Pandas, NumPy, Matplotlib, Seaborn
+- Scikit-learn, XGBoost, LightGBM
+- TensorFlow/Keras (for ANN)
+- Optuna (for hyperparameter optimization)
 
-Cross-validation scores visualized for better interpretability.
-
-5. Comprehensive Analysis
-
-Data Understanding:
-
-Exploratory Data Analysis (EDA) with 10+ visualizations.
-
-Correlation and trend analysis for feature insights.
-
-Feature Engineering:
-
-10+ engineered features including RFM and engagement scores.
-
-Domain-specific features for improved churn prediction.
-
-Model Training & Evaluation:
-
-Training of 4 base models + 1 ensemble.
-
-Detailed performance evaluation with multiple metrics:
-
-Accuracy, F1-score, Precision, Recall, ROC-AUC
-
-Confusion matrices, ROC curves, and classification reports
-
-Feature importance analysis and visualizations.
-
-⚡ How to Use
-
-Open Google Colab: https://colab.research.google.com
-
-Upload the notebook file.
-
-Run all cells sequentially.
-
-All dependencies and datasets are handled inside the notebook. No additional configuration needed.
-
-🛠 Technology & Libraries
-
-Python 3.x
-
-Pandas, NumPy, Matplotlib, Seaborn
-
-Scikit-learn, XGBoost, LightGBM
-
-TensorFlow/Keras (for ANN)
-
-Optuna (for hyperparameter optimization)
