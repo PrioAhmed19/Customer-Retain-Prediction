@@ -10,7 +10,6 @@
 - Parameter importance analysis included.
 
 ### Handling Class Imbalance
-- **No SMOTE** used: avoids oversampling pitfalls and information leakage.
 - Class weights provide more realistic and generalizable results.
 
 ### Ensemble Model
