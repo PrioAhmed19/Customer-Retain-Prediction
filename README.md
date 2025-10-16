@@ -58,12 +58,5 @@ Used **Optuna** for automatic search and pruning
 3. Run all cells sequentially.
 4. All dependencies and datasets are handled inside the notebook—no additional configuration needed.
 
----
 
-## 🛠 Technology & Libraries
-- Python 3.x
-- Pandas, NumPy, Matplotlib, Seaborn
-- Scikit-learn, XGBoost, LightGBM
-- TensorFlow/Keras (for ANN)
-- Optuna (for hyperparameter optimization)
 
