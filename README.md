@@ -1,40 +1,54 @@
 # Customer Churn Prediction
 
 
-## 🚀 Key Features & Improvements
 
-### Advanced Optimization with Optuna
-- Hyperparameter tuning: 30 trials per model for thorough exploration.
-- Stratified 5-fold cross-validation for robust evaluation.
-- Models optimized: Random Forest, XGBoost, LightGBM, and ANN.
-- Parameter importance analysis included.
+---
 
-### Handling Class Imbalance
-- Class weights provide more realistic and generalizable results.
+## ⚙️ Key Features
+- End-to-end data preprocessing and churn prediction workflow  
+- Automated feature engineering and scaling  
+- Rich exploratory data visualizations  
+- Multiple ML model comparisons with metrics  
+- Transformer-based deep learning integration  
+- Hyperparameter tuning using **Optuna**  
+- Model interpretability through feature importance plots  
 
-### Ensemble Model
-- Weighted voting based on CV performance.
-- Combines strengths of all optimized models for better performance.
+---
 
-### Enhanced Cross-Validation
-- Stratified 5-fold CV applied across all models.
-- Cross-validation scores visualized for better interpretability.
+## 🧩 Methodology
 
-### Comprehensive Analysis
-**Data Understanding**
-- EDA with 10+ visualizations.
-- Correlation and trend analysis for feature insights.
+### 1. **Data Preprocessing**
+- Imported dataset and removed duplicates, missing values, and irrelevant columns  
+- Encoded categorical variables with `LabelEncoder`  
+- Standardized numerical features using `StandardScaler`
 
-**Feature Engineering**
-- 10+ engineered features including RFM and engagement scores.
-- Domain-specific features for improved churn prediction.
+### 2. **Exploratory Data Analysis (EDA)**
+- Visualized churn distribution and behavior trends  
+- Relationship analysis between:
+  - Age vs Churn  
+  - Satisfaction Score vs Churn  
+  - Spending Patterns  
+  - Support Contact Frequency  
 
-**Model Training & Evaluation**
-- Training of 4 base models + 1 ensemble.
-- Performance evaluation with multiple metrics:
-  - Accuracy, F1-score, Precision, Recall, ROC-AUC
-  - Confusion matrices, ROC curves, classification reports
-- Feature importance analysis and visualizations.
+### 3. **Feature Engineering**
+- Constructed new interaction-based and ratio features:
+  - `Average_Transaction_Amount`
+  - `Years_as_Customer`
+  - `Num_of_Support_Contacts`
+
+### 4. **Model Training**
+Trained and compared:
+- Decision Tree  
+- Random Forest  
+- XGBoost  
+- LightGBM  
+- CatBoost  
+- Transformer-based Neural Network (Keras)
+
+### 5. **Hyperparameter Optimization**
+Used **Optuna** for automatic search and pruning
+
+
 
 ---
 
